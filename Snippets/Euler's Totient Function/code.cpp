@@ -1,4 +1,4 @@
-long long eulers_totient_function(long long n) {
+long long phi(long long n) {
     long long res = n;
     for (long long i = 2; i * i <= n; i++) {
         if (n % i == 0) {
