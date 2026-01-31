@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int distribute_apts(int n, int m, int k, vector<int>& applicants, vector<int>& apartments) {
+int give_apartments(int n, int m, int k, vector<int>& applicants, vector<int>& apartments) {
     sort(applicants.begin(), applicants.end());
     sort(apartments.begin(), apartments.end());
     int res = 0;
@@ -25,7 +25,7 @@ int distribute_apts(int n, int m, int k, vector<int>& applicants, vector<int>& a
 }
 
 void solve(int n, int m, int k, vector<int>& applicants, vector<int>& apartments) {
-    int res = distribute_apts(n, m, k, applicants, apartments);
+    int res = give_apartments(n, m, k, applicants, apartments);
     cout << res << '\n';
     return;
 }
